@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+.bg-violet{
+  background: #621587;
+}
+
+.fontype{
+  font-family: 'Cormorant Garamond', serif;
+}
+
+@media all and (max-width: 576px) {
+  .imgSlider {
+    height: 280px;
+    object-fit: cover;
+  }
+}

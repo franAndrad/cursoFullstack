@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Francisco Andrade" />
+    <meta
+      name="description"
+      content="plantilla para saber las herramientas de Bootstrap"
+    />
+    <meta name="keywords" content="plantilla,Bootstrap,herramientas" />
+
+    <!-- La posicion de los css es relevante, tienen prioridad la que esta al ultimo -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Plantilla Bootstrap</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a href="../index.html" class="navbar-brand">Bootstrap</a>
+          <!--    data-bs-toggler -> Esto es como se muetra al presionar el boton
+                  data-bs-target  -> -->
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#itemsMenu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- la clase collapse y navbar-collapse van juntas para que se redesplieguen las paginas -->
+          <div id="itemsMenu" class="collapse navbar-collapse">
+              <!-- mb-lg-0 media queri para pantallas large-->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a href="index.html" class="nav-link active">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="pages/elementos.html" class="nav-link">Elementos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="pages/sistemagrillas.html" class="nav-link">Sistema de grillas</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Ejemplo de Contenedores</h1>
+        <article class="container-fluid bg-primary">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+          incidunt odit aspernatur veritatis nulla dignissimos officia,
+          excepturi voluptatum pariatur, magni accusamus nobis explicabo
+          corporis ipsum fuga sapiente. Officiis maiores temporibus omnis
+          dolorem, placeat quae delectus illum! Excepturi dolorum quibusdam
+          nobis veniam odit ullam. Saepe rem iusto debitis explicabo?
+          Asperiores, minima?
+        </article>
+        <article class="container my-3 bg-secondary">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+          incidunt odit aspernatur veritatis nulla dignissimos officia,
+          excepturi voluptatum pariatur, magni accusamus nobis explicabo
+          corporis ipsum fuga sapiente. Officiis maiores temporibus omnis
+          dolorem, placeat quae delectus illum! Excepturi dolorum quibusdam
+          nobis veniam odit ullam. Saepe rem iusto debitis explicabo?
+          Asperiores, minima?
+        </article>
+        <article class="container">
+          <h2 class="fs-2">Ejemplo de titulo</h2>
+          <hr />
+          <h2 class="fs-1">Ejemplo de titulo</h1>
+          <h3 class="fs-2"> Ejemplo de titulo</h1>
+          <h4 class="fw-light display-1">Ejemplo de titulo display</h1>
+          <h5 class="fw-lighter display-5">Ejemplo de titulo h5</h5>
+        </article>
+        <article class="container mt-5">
+          <h2 class="fs-2">Ejemplo de parrafo</h2>
+          <hr>
+          <p class="fs-6 fw-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium ducimus molestias explicabo doloremque? Iusto laboriosam ea recusandae quo dolore cupiditate accusantium, et a accusamus in sed asperiores, quidem unde saepe ab fugiat nostrum alias atque omnis illo eius! Aliquid repellat voluptates culpa nostrum quae ullam voluptatum id est repudiandae.</p>
+          <p class="fs-5 fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem accusantium ducimus molestias explicabo doloremque? Iusto laboriosam ea recusandae quo dolore cupiditate accusantium, et a accusamus in sed asperiores, quidem unde saepe ab fugiat nostrum alias atque omnis illo eius! Aliquid repellat voluptates culpa nostrum quae ullam voluptatum id est repudiandae.</p>
+        </article>
+        <article class="container mt-5">
+          <h2 class="fw-light display-1">Ejemplo de margin y padding</h2>
+          <hr>
+          <p class="bg-danger mx-5 my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id?</p>
+          <p class="bg-danger my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id?</p>
+          <p class="bg-danger">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id?</p>
+          <p class="bg-danger ms-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id?</p>
+          <p class="bg-danger me-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id?</p>
+          <p class="bg-danger my-4">margin y</p>
+          <p class="bg-danger mx-4">margin x</p>
+          <p class="bg-primary text-white px-5">padding Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ea?</p>
+          <p class="bg-primary text-white py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ea?</p>
+          <p class="bg-primary text-white pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ea?</p>
+          <p class="bg-primary text-white pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ea?</p>
+          <p class="bg-primary text-white ps-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ea?</p>
+          <p class="bg-primary text-white pe-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ea?</p>
+        </article>
+        <article class="container mt-5 mb-5">
+          <h1 class="fw-light display-1">Colores de texto</h1>
+          <hr>
+          <p class="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+          <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+          <p class="text-sucess">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+          <p class="text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+          <p class="text-warning bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+          <p class="text-info bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+          <p class="text-light bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+          <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+          <p class="text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+          <p class="text-white bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+          <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+          <p class="text-white-50 bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, dicta.</p>
+        </article>
+      </section >
+    </main>
+    <footer class="container-fluid text-light bg-dark py-5">
+      <section class="row justify-content-md-center">
+        <article class="col-12 col-md-3">
+          <h4 class="my-3 fw-normal">Primer Columna</h2>
+          <p class="fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur amet exercitationem corporis ut neque, iste inventore minima quo fugiat.</p>
+        </article>
+        <article class="col-12 col-md-3">
+          <h4 class="my-3 fw-normal">Segunda Columna</h2>
+          <p class="fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur amet exercitationem corporis ut neque, iste inventore minima quo fugiat.</p>
+        </article>
+        <article class="col-12 col-md-3">
+          <h4 class="my-3 fw-normal">Tercer Columna</h2>
+          <p class="fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur amet exercitationem corporis ut neque, iste inventore minima quo fugiat.</p>
+        </article>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

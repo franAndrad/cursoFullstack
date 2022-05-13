@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="FranciscoAndrade" />
+    <meta name="description" content="galeria de funkopops" />
+    <meta name="keywords" content="funkopops" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <title>Galeria v2</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Galeria Funkopops</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeriav2.html">Galeria 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+        <section class="my-4" >
+            <h1 class="display-4 text-center">Contactanos</h1>
+            <hr />
+            <form>
+                <div class="mb-3" >
+                    <label class="form-label" for="nombApellido">Nombre y Apellido</label>
+                    <input class="form-control" id="nombApellido" type="text" placeholder="Juan Perez" maxlength="50" minlength="3" required autocomplete="off">
+                </div>
+                <div class="mb-3" >
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" id="email" type="email" placeholder="juanperez@gmail.com" maxlength="50" required>
+                </div>
+                <div class="mb-3" >
+                    <label class="form-label" for="telefono">Telefono</label>
+                    <input class="form-control" id="telefono" type="tel" placeholder="3881234569" maxlength="10">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="consulta">Consulta</label>
+                    <textarea class="form-control" id="consulta" rows="5"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <footer class="container-fluid text-light bg-dark py-4">
+            <p class="text-center my-0">&copy;Todos los derechos reservados</p>
+        </footer>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

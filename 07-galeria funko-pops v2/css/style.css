@@ -1,0 +1,14 @@
+.img-filter{
+    filter:grayscale(70%);
+}
+.img-filter:hover{
+    filter: none;
+    margin-right: 5px;
+    /* consultar por margin-right no funciona */
+}
+
+@media all and (max-width:991px){
+    .img-filter{
+        filter: none;
+    }
+}

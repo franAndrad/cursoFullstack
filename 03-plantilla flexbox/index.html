@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Francisco Andrade">
+    <meta name="description" content="Trabajamos con flexbox">
+    <meta name="keywords" content="flexbox, practica">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Plantilla de flexbox</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#padres">Items padres</a>
+            <a href="#hijos">Items hijos</a>
+        </nav>
+        <section class="titulo">
+            <h1>Practica de flexbox</h1>
+        </section>
+    </header>
+    <main>
+        <section id="padres"> 
+            <h2 >Propiedades del contenedor padre</h2>
+            <h3>Display flex</h3>
+            <article class="contenedorPadre">
+                <div class="caja caja1"><p>1</p></div>
+                <div class="caja caja2"><p>2</p></div>
+                <div class="caja caja3"><p>3</p></div>
+                <div class="caja caja4"><p>4</p></div>
+                <div class="caja caja5"><p>5</p></div>
+                <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>Row-reverse</h3>
+            <article class="contenedorPadre flexRowReverse">
+                <div class="caja caja1"><p>1</p></div>
+                <div class="caja caja2"><p>2</p></div>
+                <div class="caja caja3"><p>3</p></div>
+                <div class="caja caja4"><p>4</p></div>
+                <div class="caja caja5"><p>5</p></div>
+                <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>Column</h3>
+            <article class="contenedorPadre column">
+                <div class="caja caja1"><p>1</p></div>
+                <div class="caja caja2"><p>2</p></div>
+                <div class="caja caja3"><p>3</p></div>
+                <div class="caja caja4"><p>4</p></div>
+                <div class="caja caja5"><p>5</p></div>
+                <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>Column-reverse</h3>
+            <article class="contenedorPadre columnReverse">
+                <div class="caja caja1"><p>1</p></div>
+                <div class="caja caja2"><p>2</p></div>
+                <div class="caja caja3"><p>3</p></div>
+                <div class="caja caja4"><p>4</p></div>
+                <div class="caja caja5"><p>5</p></div>
+                <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>flex-wrap</h3>
+            <article class="contenedorPadre wrap">
+                <div class="caja caja1"><p>1</p></div>
+                <div class="caja caja2"><p>2</p></div>
+                <div class="caja caja3"><p>3</p></div>
+                <div class="caja caja4"><p>4</p></div>
+                <div class="caja caja5"><p>5</p></div>
+                <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>Centrar elemento</h3>
+            <article class="contenedorPadre wrap contenedorAlto centrado">
+                <div class="caja caja1"><p>1</p></div>
+                <div class="caja caja2"><p>2</p></div>
+                <div class="caja caja3"><p>3</p></div>
+                <div class="caja caja4"><p>4</p></div>
+                <div class="caja caja5"><p>5</p></div>
+                <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>justify-content: flex-start</h3>
+            <article class="contenedorPadre wrap flexStart">
+                <div class="caja caja1"><p>1</p></div>
+                <div class="caja caja2"><p>2</p></div>
+                <div class="caja caja3"><p>3</p></div>
+                <div class="caja caja4"><p>4</p></div>
+                <div class="caja caja5"><p>5</p></div>
+                <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>justify-content: flex-end</h3>
+            <article class="contenedorPadre wrap flexEnd">
+                <div class="caja caja1"><p>1</p></div>
+                <div class="caja caja2"><p>2</p></div>
+                <div class="caja caja3"><p>3</p></div>
+                <div class="caja caja4"><p>4</p></div>
+                <div class="caja caja5"><p>5</p></div>
+                <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>justify-content: center</h3>
+            <article class="contenedorPadre wrap Xcenter">
+                <div class="caja caja1"><p>1</p></div>
+                <div class="caja caja2"><p>2</p></div>
+                <div class="caja caja3"><p>3</p></div>
+                <div class="caja caja4"><p>4</p></div>
+                <div class="caja caja5"><p>5</p></div>
+                <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>justify-content: space-betweenr</h3>
+            <article class="contenedorPadre wrap spaceBetween">
+                <div class="caja caja1"><p>1</p></div>
+                <div class="caja caja2"><p>2</p></div>
+                <div class="caja caja3"><p>3</p></div>
+                <div class="caja caja4"><p>4</p></div>
+                <div class="caja caja5"><p>5</p></div>
+                <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>justify-content: space-around</h3>
+            <article class="contenedorPadre wrap spaceAround">
+                <div class="caja caja1"><p>1</p></div>
+                <div class="caja caja2"><p>2</p></div>
+                <div class="caja caja3"><p>3</p></div>
+                <div class="caja caja4"><p>4</p></div>
+                <div class="caja caja5"><p>5</p></div>
+                <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>justify-content: space-evenly</h3>
+            <article class="contenedorPadre wrap spaceEvenly">
+                <div class="caja caja1"><p>1</p></div>
+                <div class="caja caja2"><p>2</p></div>
+                <div class="caja caja3"><p>3</p></div>
+                <div class="caja caja4"><p>4</p></div>
+                <div class="caja caja5"><p>5</p></div>
+                <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>justify-content: center; align-items: flex-start;</h3>
+            <article class="contenedorPadre contenedorAlto Xcenter alignFlexStart">
+                <div class="caja caja1 alto45px"><p>1</p></div>
+                <div class="caja caja2 alto150px"><p>2</p></div>
+                <div class="caja caja3 alto70px"><p>3</p></div>
+                <div class="caja caja4 alto32px"><p>4</p></div>
+                <div class="caja caja5 alto70px"><p>5</p></div>
+                <!-- <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div> -->
+            </article>
+        </section>
+        <section>
+            <h3>justify-content: center; align-items: flex-end;</h3>
+            <article class="contenedorPadre contenedorAlto Xcenter alignFlexEnd">
+                <div class="caja caja1 alto45px"><p>1</p></div>
+                <div class="caja caja2 alto150px"><p>2</p></div>
+                <div class="caja caja3 alto70px"><p>3</p></div>
+                <div class="caja caja4 alto32px"><p>4</p></div>
+                <div class="caja caja5 alto70px"><p>5</p></div>
+                <!-- <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div> -->
+            </article>
+        </section>
+        <section>
+            <h3>justify-content: center; align-items: center; </h3>
+            <article class="contenedorPadre contenedorAlto Xcenter YCenter">
+                <div class="caja caja1 alto45px"><p>1</p></div>
+                <div class="caja caja2 alto150px"><p>2</p></div>
+                <div class="caja caja3 alto70px"><p>3</p></div>
+                <div class="caja caja4 alto32px"><p>4</p></div>
+                <div class="caja caja5 alto70px"><p>5</p></div>
+                <!-- <div class="caja caja6"><p>6</p></div>
+                <div class="caja caja7"><p>7</p></div> -->
+            </article>
+        </section>
+        <section>
+            <h3>align-content: flex-start</h3>
+            <article class="contenedorPadre wrap Xcenter contenedorAlto alignContStart">
+                <div class="caja caja1 alto32px"><p>1</p></div>
+                <div class="caja caja2 alto32px"><p>2</p></div>
+                <div class="caja caja3 alto32px"><p>3</p></div>
+                <div class="caja caja4 alto32px"><p>4</p></div>
+                <div class="caja caja5 alto32px"><p>5</p></div>
+                <div class="caja caja6 alto32px"><p>6</p></div>
+                <div class="caja caja7 alto32px"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>align-content: flex-end</h3>
+            <article class="contenedorPadre wrap Xcenter contenedorAlto alignContEnd">
+                <div class="caja caja1 alto32px"><p>1</p></div>
+                <div class="caja caja2 alto32px"><p>2</p></div>
+                <div class="caja caja3 alto32px"><p>3</p></div>
+                <div class="caja caja4 alto32px"><p>4</p></div>
+                <div class="caja caja5 alto32px"><p>5</p></div>
+                <div class="caja caja6 alto32px"><p>6</p></div>
+                <div class="caja caja7 alto32px"><p>7</p></div>
+            </article>
+        </section>
+        <section>
+            <h3>align-content: space-evenly</h3>
+            <article class="contenedorPadre wrap Xcenter contenedorAlto alignContCenter">
+                <div class="caja caja2 alto32px"><p>2</p></div>
+                <div class="caja caja1 alto32px"><p>1</p></div>
+                <div class="caja caja3 alto32px"><p>3</p></div>
+                <div class="caja caja4 alto32px"><p>4</p></div>
+                <div class="caja caja5 alto32px"><p>5</p></div>
+                <div class="caja caja6 alto32px"><p>6</p></div>
+                <div class="caja caja7 alto32px"><p>7</p></div>
+            </article>
+        </section>
+        <section id="hijos" class="contenedorHijo">
+            <h2>Propiedades del contenedor hijo</h2>
+            <hr>
+            <h3>Order</h3>
+            <article class="contenedorPadre">
+                <div class="caja caja1 order0"><p>1</p></div>
+                <div class="caja caja2 order3"><p>2</p></div>
+                <div class="caja caja3 order0"><p>3</p></div>
+                <div class="caja caja4 order2"><p>4</p></div>
+                <div class="caja caja5 order0"><p>5</p></div>
+                <div class="caja caja6 order1"><p>6</p></div>
+                <div class="caja caja7 order0"><p>7</p></div>
+            </article>    
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

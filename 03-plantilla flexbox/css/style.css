@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+footer {
+    background: rgb(22, 21, 21);
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+main {
+    margin: 20px;
+}
+
+h3,h2{
+    margin: 15px 0;
+}
+hr{
+    background: #000000;
+}
+h2{
+    text-align: center;
+}
+header{
+    text-align: center;
+}
+
+/* Barra de navegacion */
+nav{
+    position: fixed;
+    width: 100%;
+    background: #1a1818;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+/* Titulo */
+.titulo{
+    background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  padding: 100px 0px 50px 0;
+  color: white;
+}
+
+/*Practica de flexbox*/
+.contenedorPadre{
+    background: lightskyblue;
+    /* padding: 20px; */
+    display: flex;
+}
+
+.caja{
+    border: 1px solid grey;
+    width: 300px;
+    text-align: center;
+    padding: 5px 0;
+    color: white;
+}
+
+.caja1{
+ background-color: #c850c0;
+}
+.caja2{
+ background-color: #a4449d;
+}
+.caja3{
+ background-color: #81387c;
+}
+.caja4{
+ background-color: #602c5c;
+}
+.caja5{
+ background-color: #40203d;
+}
+.caja6{
+ background-color: #231522;
+}
+.caja7{
+ background-color: #000000;
+}
+
+.flexRowReverse{
+    flex-direction: row-reverse;
+}
+.column{    
+    flex-direction: column;
+}
+.columnReverse{
+    flex-direction: column-reverse;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.contenedorAlto{
+    height: 400px;
+}
+.centrado{
+    justify-content: center;
+    align-content: center;
+}
+.flexStart{
+    justify-content: flex-start;
+}
+.flexEnd{
+    justify-content: flex-end;
+}
+.Xcenter{
+    justify-content: center;
+}
+.spaceBetween{
+    justify-content: space-between;
+}
+.spaceAround{
+    justify-content: space-around;
+}
+.spaceEvenly{
+    justify-content: space-evenly;
+}
+
+.alto45px{
+    height: 45px;
+}
+.alto32px{
+    height: 32px;
+}
+.alto150px{
+    height: 150px;
+}
+.alto70px{
+    height: 70px;
+}
+.alignFlexStart{
+    align-items: flex-start;
+}
+.alignFlexEnd{
+    align-items: flex-end;
+}
+.YCenter{
+    align-items: center;
+}
+.alignContStart{
+    align-content: flex-start;
+}
+.alignContEnd{
+    align-content: flex-end;
+}
+.alignContCenter{
+    align-content:space-evenly;
+}
+
+
+.contenedorHijo h2{
+    font-style: italic;
+}
+.order0{
+    order: 0;
+}
+.order1{
+    order: 1;
+}
+.order2{
+    order: 2;
+}
+.order3{
+    order: 3;
+}

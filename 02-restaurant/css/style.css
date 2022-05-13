@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Hubballi&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+main{
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* Barra de navegacion */
+nav {
+  color: white;
+  background: rgb(41, 38, 38);
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline red;
+}
+
+/* Menu de la pagina */
+main p,h2,h3{
+  margin: 10px 0px;
+}
+
+/* Banner */
+.contentBanner{
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.contentBanner img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.contentBanner hr{
+  background: white;
+}
+.contentImagen{
+  width: 100%;
+  height: 100%;
+  filter: brightness(60%);
+}
+.contentDescription{
+  color: white;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  width: 50%;
+  padding: 20px;
+  align-items: center;
+}
+.contentDescription p{
+  font-style: italic;
+}
+
+/* Datos */
+.contentDATA{
+  padding: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:space-between;
+}
+.contentDATA h2{
+  color:#251f56;
+}
+.contentDATA img{
+  display: block;
+  margin: auto;
+  width: 100%;
+  filter: contrast(90%);
+}
+.contentDATA a{
+  font-weight: 600;
+  color: red;
+}
+.contentImagenDATA{
+  width: 45%;
+}
+.contentDescriptionDATA{
+  width: 50%;
+}
+#imagenPhone{
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: auto;
+}
+
+/* Tarjetas de comida */
+.contentFoods{
+  padding: 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contentFoods h2{
+  margin:0px 0px 20px 0px;
+  text-align: center;
+  color:#251f56;
+}
+.contentSubtitle{
+  width: 100%;
+}
+.contentTarjet{
+  background: #35cd8c;
+  color:white;
+  padding: 20px;
+  width: 25%;
+  border-radius: 5%;
+  box-shadow: 8px 5px 12px grey;
+  filter: grayscale(60%);
+}
+.contentTarjet:hover{
+  background-color: red;
+  transition: 300ms;
+  filter: none;
+}
+.contentTarjet img{
+  width: 100%;
+  filter: contrast(120%);
+}
+
+/* Pie de pagina */
+.backgroundAntiquewhite{
+  background: antiquewhite;
+}
+.contentContact{
+  color: #251f56;
+  padding: 30px 0px;
+  display: flex;
+  justify-content:space-around;
+}
+.contentContact h3{
+  color: red;
+}
+ul{
+  list-style-position: inside;
+}
+.footer{
+  background: red;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Pagina Contact */
+.contentContactInfo{
+  padding-top: 150px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentContactInfo img{
+  padding: 40px;
+}
+
+
+@media all and (max-width: 768px){
+
+  /* nav{
+    flex-direction: column;
+  } */
+  .contentDescription{
+    width: 80%;
+  }
+  .contentDATA{
+    flex-direction: column-reverse;
+  }
+  .contentImagenDATA{
+    margin-top: 20px;
+    width: 100%;
+  }
+  .contentDescriptionDATA{
+    width: 100%;
+  }
+  .contentFoods{
+    flex-direction: column;
+  }
+  .contentTarjet{
+    width: 100%;
+    margin-top: 20px;
+    filter: none;
+  }
+  .contentContact{
+    flex-direction: column;
+    align-items: center;
+  } 
+  .contentInfo{
+    width: 80%;
+  }
+  .contentContactInfo img{
+    width: 100% ;
+    padding: 20px;
+  }
+
+}
+
+/* media querie para dispositivos medianos */
+@media all and (min-width: 769px) and (max-width:991px){
+  .contentDescription{
+    width: 80%;
+  }
+  .contentDescriptionDATA{
+    width:50%
+  }
+  .contentImagenDATA{
+    margin-top: 20px;
+    width: 45%;
+  }
+  #imagenPhone{
+    margin-top: 20px;
+    width: 80%;
+  }
+  .contentTarjet{
+    width: 45%;
+    margin-top: 20px;
+    filter: none;
+  }
+  .contentContact{
+    flex-wrap: wrap;
+  }
+  .contentInfo{
+    width: 50%;
+    padding: 5px 40px;
+  }
+  .contentInfo h3{
+    text-align: center;
+  }
+  .contentContactInfo img{
+    width: 100% ;
+    padding: 150px 60px;
+  }
+}
+
+

@@ -1,0 +1,151 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Francisco Andrade" />
+  <meta
+    name="description"
+    content="plantilla para saber las herramientas de Bootstrap"
+  />
+  <meta name="keywords" content="plantilla,Bootstrap,herramientas" />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Plantilla Bootstrap</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a href="../index.html" class="navbar-brand">Bootstrap</a>
+        <!--    data-bs-toggler -> Esto es como se muetra al presionar el boton
+                  data-bs-target  -> -->
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#itemsMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- la clase collapse y navbar-collapse van juntas para que se redesplieguen las paginas -->
+        <div id="itemsMenu" class="collapse navbar-collapse">
+          <!-- mb-lg-0 media queri para pantallas large-->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="elementos.html" class="nav-link active">Elementos</a>
+            </li>
+            <li class="nav-item">
+              <a href="sistemagrillas.html" class="nav-link"
+                >Sistema de grillas</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container my-4">
+      <h2 class="display-3">Botones Comunes</h2>
+      <hr />
+      <button type="button" class="btn btn-primary">primary</button>
+      <button type="button" class="btn btn-secondary">secondary</button>
+      <button type="button" class="btn btn-success">success</button>
+      <button type="button" class="btn btn-danger">danger</button>
+      <button type="button" class="btn btn-warning">warning</button>
+      <button type="button" class="btn btn-info">info</button>
+      <button type="button" class="btn btn-light">light</button>
+      <button type="button" class="btn btn-dark">dark</button>
+      <button type="button" class="btn btn-link">link</button>
+    </div>
+    <div class="container my-4">
+      <h2 class="display-3">Botones outline</h2>
+      <button type="button" class="btn btn-outline-primary">primary</button>
+      <button type="button" class="btn btn-outline-secondary">secondary</button>
+      <button type="button" class="btn btn-outline-success">success</button>
+      <button type="button" class="btn btn-outline-danger">danger</button>
+      <button type="button" class="btn btn-outline-warning">warning</button>
+      <button type="button" class="btn btn-outline-info">info</button>
+      <button type="button" class="btn btn-outline-light">light</button>
+      <button type="button" class="btn btn-outline-dark">dark</button>
+      <button type="button" class="btn btn-outline-link">link</button>
+    </div>
+    <div class="container my-4">
+      <h2 class="display-3">Botones de diferentes tamaños</h2>
+      <button type="button" class="btn btn-primary btn-sm">primary</button>
+      <button type="button" class="btn btn-primary btn">primary</button>
+      <button type="button" class="btn btn-primary btn-lg">primary</button>
+      <button type="button" class="btn btn-primary btn" disabled>
+        deshabilitado
+      </button>
+    </div>
+    <div class="container my-4">
+      <h2 class="display-3">Tablas responsive</h2>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid text-light bg-dark py-5">
+    <section class="row justify-content-md-center">
+      <article class="col-12 col-md-3">
+        <h4 class="my-3 fw-normal">Primer Columna</h2>
+        <p class="fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur amet exercitationem corporis ut neque, iste inventore minima quo fugiat.</p>
+      </article>
+      <article class="col-12 col-md-3">
+        <h4 class="my-3 fw-normal">Segunda Columna</h2>
+        <p class="fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur amet exercitationem corporis ut neque, iste inventore minima quo fugiat.</p>
+      </article>
+      <article class="col-12 col-md-3">
+        <h4 class="my-3 fw-normal">Tercer Columna</h2>
+        <p class="fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur amet exercitationem corporis ut neque, iste inventore minima quo fugiat.</p>
+      </article>
+    </section>
+  </footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+</body>

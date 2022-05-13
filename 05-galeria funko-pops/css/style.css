@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-color: #51d7df;
+    background-image: linear-gradient(90deg, #51d7df 0%, #dda2dd 100%);    
+}
+h1 {
+  text-align: center;
+  margin: 30px 0px;
+}
+footer{
+    text-align: center;
+    background: black;
+    color: whitesmoke;
+    padding: 20px 0px;
+}
+main{
+    margin: 20px;
+}
+
+/* galeria */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div{
+    width: 23%;
+    margin: 10px;
+}
+img{
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 8px 5px 12px grey;
+    filter: grayscale(80%);
+}
+img:hover{
+    filter: none;
+    transition: 400ms;
+    position: relative;
+    top:3px;
+    right: 3px;
+}
+
+/* media queries */
+
+/* @media tipo de medio (screen,print,spech,all) and (condicion){
+    defino todos los estilos
+}*/
+
+/* media querie para dispositivos pequeños */
+@media all and (max-width: 768px){
+    div{
+        width: 100%;
+    }
+}
+
+/* media querie para dispositivos medianos */
+@media all and (min-width: 769px) and (max-width:991px){
+    div{
+        width: 47%;
+    }
+}
+
+/* extra large - lg */
+@media all and (min-width: 1200px){
+    h1{
+        color:blue;
+    }
+}

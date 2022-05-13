@@ -1,0 +1,25 @@
+COMANDOS DE GIT	
+
+Es un sistema de control de versiones, nos permite guardar el codigo en distintas porciones de tiempo.
+
+	COMANDOS						|	DESCRIPCION
+----------------------------------------------------------------------
+	git init 			     		| Iniciar git
+	git status					| Estado de las ramas
+	git add . 					| Prepara el proyecto antes de guardarlo	
+	git commit -m 'nombre'  			| Como se va a guardar en la rama actual
+	git log						| muestra el listado de lo commit
+	git branch					| devuelve el listado de las ramas
+	git checkout [nombre]			| salta a una rama
+	git chechout -b [nombre]			| crea y salta a la rama una sola vez 
+	git merge  [name]				| mover una branch
+	git remote add [name][link]		| agregar un repo remoto
+	git remote       				| listar los repositorios remotos
+	git remote -v					| muestra los links del repo remoto
+	git push [nameremote][nameRama]	| publicar la rama
+	git clone [linkrepo]			| obtener el repo
+	git branch -a					| muestras las ramas del repo que nos inv
+	git checkout [namerama]			| trae la rama del repo
+	git pull [nameremote][nameRama]	| obtenemos los cambios realizados
+
+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
