@@ -22,7 +22,5 @@ Es un sistema de control de versiones, nos permite guardar el codigo en distinta
 	git checkout [namerama]			| trae la rama del repo
 	git pull [nameremote][nameRama]	| obtenemos los cambios realizados
 
-prueba
-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
 
 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
