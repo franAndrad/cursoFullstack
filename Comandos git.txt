@@ -23,5 +23,4 @@ Es un sistema de control de versiones, nos permite guardar el codigo en distinta
 	git pull [nameremote][nameRama]	| obtenemos los cambios realizados
 
 ke
-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
-
+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
