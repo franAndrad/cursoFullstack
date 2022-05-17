@@ -1,7 +1,6 @@
 // Escribe un programa que pida una frase y escriba las vocales que aparecen
-let frase = "Perro"
-//document.write(cadena.substring(cadena.length,2));
 
+l
 console.log(frase.length);
 console.log(frase.substring(0,2)); //El primero indica cuanto se mueve y el otro  cuantas toma
 
