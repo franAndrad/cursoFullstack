@@ -2,8 +2,8 @@
 
 l
 console.log(frase.length);
-console.log(frase.substring(0,2)); //El primero indica cuanto se mueve y el otro  cuantas toma
-
+console.log(frase.substring(0,2)); //El primero indica desde donde se mueve y el segundo hasta donde
+console.log(frase.charAt(0)) === 'a' //Permite separar un caracter
 
 //Primer caracter
 if(frase.substring(0,1)==='a' || frase.substring(0,1)==='e' || frase.substring(0,1)==='i' || frase.substring(0,1)==='o' || frase.substring(0,1)==='u'){
