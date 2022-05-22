@@ -11,7 +11,7 @@
 
 let nota = parseInt(prompt("Ingrese la nota: "));
 
-if(nota != NaN){
+if(Number.isNaN(nota) === false){
     if(nota>=0 && nota<=2)
         alert("Muy deficiente");
     if(nota>=3 && nota<=4)
@@ -26,7 +26,6 @@ if(nota != NaN){
         alert("Sobrasaliente");
     if(nota<0 || nota>10)
         alert("Numero erroneo");
-}
-else {
+}else {
     alert("Ingrese un numero valido");
 }
