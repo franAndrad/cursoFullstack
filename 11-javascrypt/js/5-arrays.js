@@ -2,28 +2,30 @@
 let _usuarios = [];
 let series = ['Naruto',2,'GOT',8,'Rick and Morty',4];
 
+// Funciones
+const imprimirArreglo = (titulo) => { 
+    document.write('<hr>');
+    document.write(`<h3>${titulo}</h3>`);
+    for (let i = 0; i < series.length; i++) {
+        document.write('<br>' + series[i]);
+    }
+};
+
 document.write(series);
 // Como acceder a un arreglo
 document.write('<br>' + series[0]);
 document.write('<br>' + series[4]);
+
 // Bucles para mostrar todos los elementos del arreglo
-for (let i = 0; i < series.length; i++) {
-    document.write('<br>' + series[i]);
-}
+imprimirArreglo("Arreglo original");
 
 // Agregar un elemento al final del arreglo
-document.write('<hr>');
 series.push('Ozark');
-for (let i = 0; i < series.length; i++) {
-    document.write('<br>' + series[i]);
-}
+imprimirArreglo("Se agrego un elemento al final del arreglo");
 
 // Agragar un elemento en una posicion particuar
-document.write('<hr>');
 series.splice(3,0,'Breaking Bad');
-for (let i = 0; i < series.length; i++) {
-    document.write('<br>' + series[i]);
-}
+imprimirArreglo("Se agrego un elemento en una posicion");
 
 // Elimar un elemento desde uns posicion particular
 // document.write('<hr>');
@@ -33,15 +35,9 @@ for (let i = 0; i < series.length; i++) {
 // }
 
 // Elimar todos los elementos desde una posicion particular
-document.write('<hr>');
 series.splice(7);
-for (let i = 0; i < series.length; i++) {
-    document.write('<br>' + series[i]);
-}
+imprimirArreglo("Elimar todos los elementos desde una posicion particular (7)");
 
 // Modificar el elemento de un arreglo
 series[6] = true;
-document.write('<hr>');
-for (let i = 0; i < series.length; i++) {
-    document.write('<br>' + series[i]);
-}
+imprimirArreglo("Modificar el elemento 7 de un arreglo");
