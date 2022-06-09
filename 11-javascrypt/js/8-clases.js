@@ -27,7 +27,35 @@ class Usuario{
             <li>Nombre usuario: ${this.nombreUsuario} </li>
         </ul>`);
     }
+    
+    // usamos propiedades conmutadas para acceder o cambiar una propiedad
+    // get
+    get mostrarNombreUsuario(){
+        return this.nombreUsuario;
+    }
+    get mostrarDireccion(){
+        return this.direccion;
+    }
+    // setter
+    set modificarDireccion(nuevaDireccion){
+        this.direccion = nuevaDireccion;
+    }
+    
 }
+
+// clase alumno que hereda de usuario
+class Alumno extends Usuario{
+    // creamos el constructor
+    constructor(comision,legajo,estado,nombreUsuario,nombre,apellido,correo,password,direccion){
+        // invocar el metodo constructor
+        super(nombreUsuario,nombre,apellido,password,direccion);
+        // agregamos los nuevos
+        this.comision = comision;
+        this.legajo = legajo;
+        this.estado = estado;
+    }
+}
+
 
 // Como crear un objeto o instancia
 let userValentina = new Usuario('ValeOrmaechea','Valentina', 'Ormaechea', 'valeOrmaechea@gmail.com','123456a','-');
@@ -36,3 +64,10 @@ let userFrancisco = new Usuario('franAndrad','Francisco', 'Andrade', 'franAndrad
 console.log(userValentina);
 userValentina.mostrarDatos();
 userFrancisco.mostrarDatos();
+
+document.write(`<br>El nombre del usuario es ${userValentina.mostrarNombreUsuario}`);
+document.write(`<br>La direccion del usuario es ${userValentina.mostrarDireccion}`);
+
+userFrancisco.modificarDireccion = 'Perico';
+document.write(`<br>La direccion del usuario es ${userFrancisco.mostrarDireccion}`);
+
