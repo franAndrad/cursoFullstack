@@ -35,3 +35,9 @@ window.setInterval(()=>{
     horaReloj.innerHTML = `
     <p>${horas}:${minutos}:${segundos}</p>`;
 },1000);
+
+function cambiarColor(color){
+    let seccion = document.getElementsByClassName('fechaHora');
+    // console.log(seccion[0]);
+    seccion[0].className = `fechaHora ${color} py-4`;
+}
