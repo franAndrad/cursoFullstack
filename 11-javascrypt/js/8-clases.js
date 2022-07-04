@@ -130,3 +130,6 @@ alumnoMauro.mostrarDatosAlumno();
 // alumnoMauro.deshabilitar();
 alumnoMauro.modificarEstado(false);
 alumnoMauro.mostrarDatosAlumno();
+
+// para usar el set ponemos
+// clase.nombreSet = valor;
